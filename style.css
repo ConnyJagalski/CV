@@ -9,12 +9,7 @@ body {
 	margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: "Kanit", sans-serif;
 }
 
@@ -25,5 +20,28 @@ h6 {
 #first-header {
 	text-align: center;
 	background-color: blueviolet;
-	padding: 16px;
+}
+
+article + article,
+section + section {
+  margin-top: 50px;
+}
+
+nav a {
+  margin: 50px;
+  color: black;
+}
+
+nav a:hover {
+  cursor: pointer;
+  font-size: 110%;
+  color: rgb(113, 17, 17);
+}
+
+nav a:active {
+  color: green;
+}
+
+article + article {
+  border: solid 2px black;
 }

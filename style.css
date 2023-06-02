@@ -45,3 +45,12 @@ nav a:active {
 article + article, footer {
   border-top: solid 2px black;
 }
+
+::selection {
+  background-color: rgb(95, 18, 167);
+  color: rgb(252, 246, 246);
+}
+
+header p::after {
+  content: "😸";
+}

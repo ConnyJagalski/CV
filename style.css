@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&family=Playfair&display=swap");
 
-* {
+html {
 	box-sizing: border-box;
 	font-family: "Playfair", serif;
 }
@@ -28,7 +28,7 @@ section + section {
 }
 
 nav a {
-  padding: 30px 50px;
+  margin: 70px 50px;
   color: black;
 }
 
@@ -51,6 +51,6 @@ article + article, footer {
   color: rgb(252, 246, 246);
 }
 
-header p::after {
+.cat::after {
   content: "😸";
 }

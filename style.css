@@ -28,7 +28,7 @@ section + section {
 }
 
 nav a {
-  margin: 50px;
+  padding: 30px 50px;
   color: black;
 }
 
@@ -42,6 +42,6 @@ nav a:active {
   color: green;
 }
 
-article + article {
-  border: solid 2px black;
+article + article, footer {
+  border-top: solid 2px black;
 }

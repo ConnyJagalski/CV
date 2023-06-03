@@ -55,3 +55,7 @@ article + article, footer {
 .cat::after {
   content: "😸";
 }
+
+.inline {
+  display: inline;
+}

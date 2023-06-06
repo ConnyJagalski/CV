@@ -29,8 +29,12 @@ section + section {
   margin-top: 2.5rem;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
 nav a {
-  display: inline-block;
   margin: 1rem 2.5rem;
   color: black;
 }
@@ -58,12 +62,13 @@ article + article, footer {
   content: "😸";
 }
 
-.inline {
-  display: inline;
-}
-
 article {
   position: relative;
+}
+
+section header {
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -99,6 +104,10 @@ h2 {
     font-size: 22px;
   }
 
+  nav {
+    flex-direction: row;
+  }
+
   .hire {
     position: fixed;
     top: 0;
@@ -107,6 +116,14 @@ h2 {
 
   article {
     margin-top: 3rem;
+  }
+
+  section header {
+    flex-direction: row;
+  }
+
+  section header p {
+    margin-left: 1rem;
   }
 }
 

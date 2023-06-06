@@ -93,3 +93,41 @@ h2 {
 #main-width {
   max-width: 75ch;
 }
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 22px;
+  }
+
+  .hire {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  article {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 25px
+  };
+
+  .hire {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  article {
+    margin-top: 3.5rem;
+  }
+}
+
+@media print {
+  .hire {
+    display: none;
+  }
+}

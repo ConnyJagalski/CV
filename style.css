@@ -8,7 +8,16 @@ html {
 
 body {
 	margin: 0;
+  --background: linear-gradient(blueviolet 0%, pink 100%);
+  --text-color: black;
+  --hover-color: rgb(113, 17, 17);
+  --active-color: green;
+  --select-color: rgb(252, 246, 246);
+  --page-background-color: white;
+  --page-text-color: black;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Kanit", sans-serif;
@@ -18,9 +27,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 1rem;
 }
 
+.background {
+  background-image: var(--background);
+}
+
 #first-header {
 	text-align: center;
-	background-color: blueviolet;
   position: relative;
 }
 
@@ -36,26 +48,26 @@ nav {
 
 nav a {
   margin: 1rem 2.5rem;
-  color: black;
+  color: var(--text-color);
 }
 
 nav a:hover {
   cursor: pointer;
   font-size: 1.1rem;
-  color: rgb(113, 17, 17);
+  color: var(--hover-color);
 }
 
 nav a:active {
-  color: green;
+  color: var(--active-color);
 }
 
 article + article, footer {
-  border-top: solid 0.1rem black;
+  border-top: solid 0.1rem var(--text-color);
 }
 
 ::selection {
-  background-color: rgb(95, 18, 167);
-  color: rgb(252, 246, 246);
+  background-color: var(--background);
+  color: var(--select-color);
 }
 
 .cat::after {
@@ -146,5 +158,12 @@ h2 {
 @media print {
   .hire {
     display: none;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --page-background-color: black;
+    --page-text-color: white;
   }
 }

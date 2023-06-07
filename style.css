@@ -18,8 +18,6 @@ body {
   --page-text-color: black;
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Kanit", sans-serif;
 }
@@ -35,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
 #first-header {
 	text-align: center;
   position: relative;
+}
+
+.first-header:hover .hire {
+  transform: scale(1.5);
 }
 
 article + article,

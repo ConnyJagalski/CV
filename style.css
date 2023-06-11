@@ -115,11 +115,16 @@ h2 {
   font-size: 0.25em;
 }
 
-#main-width {
+#main-content {
   max-width: 75ch;
 }
 
-@media screen and (min-width: 786px) {
+#main-content > article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 768px) {
   html {
     font-size: 22px;
   }
